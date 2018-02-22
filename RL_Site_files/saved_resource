@@ -1,0 +1,15 @@
+(function()
+{
+    var productID = monetateData.currentProductId;
+
+    if ((typeof ProductIDView !== 'undefined') && (ProductIDView.length > 0))
+    {
+        var i = document.createElement('script');
+        i.src = document.location.protocol
+            + '//uat.netmng.com/dct/?aid=1137&feedId=518&productId='
+            + productID;
+        document.getElementsByTagName('body')[0].appendChild(i);
+    }
+})();
+
+ 

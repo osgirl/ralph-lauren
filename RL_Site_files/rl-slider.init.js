@@ -1,0 +1,4 @@
+'use strict';(function($){var rlSliderInit=function(){var twovis=[{breakpoint:14000,settings:{centerMode:true,centerPadding:'17.83333333333333%',slidesToShow:2,slidesToScroll:2,draggable:false,arrows:true}},{breakpoint:768,settings:{centerMode:true,centerPadding:'16.25%',slidesToShow:1,arrows:false,swipeToSlide:true}}]
+jQuery('.rl-slider').each(function(){var self=jQuery(this);if(!self.parent().hasClass('rl-comp-Slider')){var breakpoints=[];if(self.is('.rl-twovis')){breakpoints=twovis;}
+self.on('init',function(){self.addClass('rl-ready');}).slick({prevArrow:'<span class="slick-prev"></span>',nextArrow:'<span class="slick-next"></span>',dots:true,swipeToSlide:true,infinite:true,speed:800,easing:'ease-in-out',responsive:breakpoints});}else{self.css({'opacity':1});}});}
+rlSliderInit();})(jQuery);
